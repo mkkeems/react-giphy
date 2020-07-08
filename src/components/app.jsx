@@ -19,7 +19,8 @@ class App extends Component {
   search = (query) => {
     giphy(GIPHYAPIKEY).search({
       q:  query,
-      rating: 'g'
+      rating: 'g',
+      limit: 10
     }, (err, res) => {
       // Res contains gif data!
       this.setState({
