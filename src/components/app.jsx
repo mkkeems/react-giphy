@@ -4,7 +4,7 @@ import Gif from './gif.jsx';
 import GifList from './gif_list.jsx';
 import giphy from 'giphy-api';
 
-const GIPHYAPIKEY = "xUH8Z5fEtwemLT8VgPGSdKtaLqvfd6y6"
+const GIPHYAPIKEY = process.env.GIPHY_API_KEY
 
 class App extends Component {
   constructor(props){
